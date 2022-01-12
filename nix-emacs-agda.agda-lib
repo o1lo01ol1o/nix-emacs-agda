@@ -1,0 +1,4 @@
+name: nix-emacs-agda
+include: src
+depend: cubical standard-library
+flags: --cubical
