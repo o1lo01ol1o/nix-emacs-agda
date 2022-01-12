@@ -2,7 +2,7 @@
 
 ## Overview
 
-Provides a nix shell containing an `emacs` overlay and any `agda` packages specified in shell nix.
+Provides a nix shell containing an `emacs` overlay and any `agda` packages specified in shell nix.  It provides the `standard-library` and `cubical` by default.
 
 ## Cachix support
 
@@ -12,3 +12,4 @@ Provides a nix shell containing an `emacs` overlay and any `agda` packages speci
 cachix use nix-emacs-agda
 ```
 to download current builds instead of building them locally.
+
