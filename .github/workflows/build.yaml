@@ -1,0 +1,22 @@
+name: Build
+on: [push, pull_request, release]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.4
+      with:
+          persist-credentials: false
+          submodules: true
+
+    - uses: cachix/install-nix-action@v16
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+
+    - uses: cachix/cachix-action@v10
+      with:
+        name: nix-emacs-agda
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+
+    - run: nix-build --version
+    - run: nix-shell --command "echo 'all good'"
