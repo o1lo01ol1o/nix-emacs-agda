@@ -5,8 +5,8 @@
         "homepage": "",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "ba90d4ee66469dced4f2de1749d41e3551558934",
-        "sha256": "0r4rnikvbl8ispj31ag728bb30ajj0sbw7fmax81q52wlcabl73r",
+        "rev": "12d554e5c54487d753a133c048e262f3d54019bd",
+        "sha256": "0q9109jaqrcflpwb3ckmhabcd1rcxnh5s68rg05i0x6crclygg9r",
         "type": "tarball",
         "url": "https://github.com/nix-community/emacs-overlay/archive/ba90d4ee66469dced4f2de1749d41e3551558934.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
