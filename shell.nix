@@ -5,7 +5,7 @@ let
 in with pkgs;
 mkShell {
   buildInputs = [
-    pkgs.emacsPgtkGcc
+    pkgs.emacs
     (agda.withPackages (ps: [
       ps.standard-library
       ps.cubical
