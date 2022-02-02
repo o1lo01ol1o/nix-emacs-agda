@@ -11,8 +11,8 @@ Provides a nix shell containing an `emacs` overlay and any `agda` packages speci
 ```bash
 cachix use nix-emacs-agda
 ```
-to download current builds instead of building them locally.
 
+to download current builds instead of building them locally.
 
 
 ## Installing Doom Emacs with Nix
@@ -37,22 +37,14 @@ so we will use the underlying ``emacs`` provided by ``nixpkgs`` but install ``do
 
 
 2. Install ``Nix`` (*not* ``NixOS``) using following the guidance
-   `on the official site <https://nixos.org/download.html#nix-install-linux>`_.
-   We install the single-user version for linux
-   (compare this with what is written on the official website):
-
-   .. code::
-
-      sh <(curl -L https://nixos.org/nix/install) --no-daemon
-
-   If you are on MacOS this will be different, and if you are on Windows using NixOS
-   then this should also be exactly what you need.
-
+   `on the official site <https://nixos.org/download.html#nix-install-linux>`.
+   
 3. In the root directory of this project enter a `nix-shell`: 
 
    ```bash 
    nix-shell
    ```
+   
 4. Run doom from within the `nix-shell`:  
    ```bash 
    doom run
@@ -74,5 +66,3 @@ so we will use the underlying ``emacs`` provided by ``nixpkgs`` but install ``do
 
       doom run .
       ```
-
-
