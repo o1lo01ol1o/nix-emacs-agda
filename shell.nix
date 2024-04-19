@@ -2,7 +2,7 @@ let
   sources = import ./nix/sources.nix;
   emacsOverlay = import sources.emacs-overlay;
   pkgs = import sources.nixpkgs { overlays = [ emacsOverlay ]; };
-  emacsPackages = pkgs.emacsPackagesNgGen pkgs.emacsPgtkGcc;
+  emacsPackages = pkgs.emacsPackagesFor pkgs.emacsPgtk;
   emacsWithPackages = emacsPackages.emacsWithPackages;
   epkgs = emacsWithPackages (epkgs: [ epkgs.vterm ]);
 in with pkgs;
